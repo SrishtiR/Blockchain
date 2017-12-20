@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			td, th {
+			    border: 1px solid gray;
+			}
+		</style>
+		<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+		<script src="./index.js"></script>
+	</head>
+	<body style="background-color:powderblue;">
+		<div class = "table">
+			<table class = "table_border">
+			<thead>
+			<tr>
+				<th>Fund</th>
+				<th>Amount</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>A</td>
+				<td id="fundA"></td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td id="fundB"></td>
+			</tr>
+			</tbody>
+			</table>
+		</div> <br><br>
+		<div class = "frm">
+			<form id = "sub">
+				<input type : "number" id = "amt" name = "amount" placeholder = "Enter Amount"/>
+				<input type : "text" id = "fnd" name = "fund" placeholderx = "Enter Fund"/>
+				<input class="button" name="submit" type="button" value="Rebalance" onclick="rebalanceFunds()" />
+			</form>
+		</div>
+	</body>
+</html>
